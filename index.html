@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Comidas Rápidas</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <h1>Comidas Rápidas</h1>
+    <div id="menu">
+        <button id="listarBtn">Listar Comidas</button>
+        <button>Agregar Comida</button>
+        <button>Actualizar Comida</button>
+        <button>Borrar Comida</button>
+    </div>
+    <div id="formulario" style="display: none;">
+        <h2>Agregar Comida Rápida</h2>
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre">
+        <br>
+        <label for="precio">Precio:</label>
+        <input type="number" id="precio">
+        <br>
+        <label for="descripcion">Descripción:</label>
+        <input type="text" id="descripcion">
+        <br>
+        <button>Agregar</button>
+    </div>
+    <div id="formulario-actualizar" style="display: none;">
+        <h2>Actualizar Comida Rápida</h2>
+        <label for="codigo-actualizar">Código:</label>
+        <input type="text" id="codigo-actualizar">
+        <br>
+        <label for="nombre-actualizar">Nuevo Nombre:</label>
+        <input type="text" id="nombre-actualizar">
+        <br>
+        <label for="precio-actualizar">Nuevo Precio:</label>
+        <input type="number" id="precio-actualizar">
+        <br>
+        <label for="descripcion-actualizar">Nueva Descripción:</label>
+        <input type="text" id="descripcion-actualizar">
+        <br>
+        <button>Actualizar</button>
+    </div>
+    <div id="formulario-borrar" style="display: none;">
+        <h2>Borrar Comida Rápida</h2>
+        <label for="codigo-borrar">Código:</label>
+        <input type="text" id="codigo-borrar">
+        <br>
+        <button>Borrar</button>
+    </div>
+    <div id="tabla" style="display: none;">
+        <h2>Lista de Comidas Rápidas</h2>
+        <table>
+            <tr>
+                <th>Código</th>
+                <th>Nombre</th>
+                <th>Precio</th>
+                <th>Descripción</th>
+            </tr>
+            <tbody id="tabla-comidas"></tbody>
+        </table>
+    </div>
+    <script type= text/javascript src= "ajax.js"></script>
+</body>
+</html>
